@@ -367,4 +367,46 @@ a {
     }
 }
 
+.pagination {
+    display: flex;
+  
+  
+  .arrow-button, .page-button, .page-button_selected {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 2px;
+  }
+  
+  .arrow-button {
+    background: white;
+    border: 1px solid #e5e5e5;
+    margin: 0 5px;
+   
+  }
+    
+  .page-button {
+    background: white;
+    border: 1px solid #e5e5e5;
+    padding: 0 10px;
+    margin: 0 5px;
+  }
 
+  
+  .page-button_selected {
+    background: black;
+    color: white;
+  }
+}
+.arrow-button:hover, .page-button:hover, .page-button_selected:hover {
+    background: yellow;
+    color: blue;
+}
+
+.Most_popular {
+    display: flex;
+    flex-direction: column;
+    .Most_popular_footer {
+        list-style: none;
+    }
+}

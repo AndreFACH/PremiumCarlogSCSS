@@ -329,4 +329,42 @@ a {
 }
 .newsletter button:hover {
   background: #333;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination .arrow-button, .pagination .page-button, .pagination .page-button_selected {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 2px;
+}
+.pagination .arrow-button {
+  background: white;
+  border: 1px solid #e5e5e5;
+  margin: 0 5px;
+}
+.pagination .page-button {
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+.pagination .page-button_selected {
+  background: black;
+  color: white;
+}
+
+.arrow-button:hover, .page-button:hover, .page-button_selected:hover {
+  background: yellow;
+  color: blue;
+}
+
+.Most_popular {
+  display: flex;
+  flex-direction: column;
+}
+.Most_popular .Most_popular_footer {
+  list-style: none;
 }/*# sourceMappingURL=styli.css.map */
