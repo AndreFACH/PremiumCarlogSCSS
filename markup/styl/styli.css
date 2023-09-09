@@ -30,7 +30,7 @@ a {
   min-height: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header .nav a {
@@ -71,6 +71,14 @@ a {
   border: none;
 }
 
+#vehicle1 {
+  display: none;
+}
+
+#vehicle:checked ~ .header_menu {
+  display: block;
+}
+
 .block {
   display: flex;
   margin: 0 -15px;
@@ -89,7 +97,6 @@ a {
 .card {
   position: relative;
   border-radius: 5px;
-  overflow: hidden;
 }
 .card .btn {
   position: absolute;
@@ -362,9 +369,21 @@ a {
 }
 
 .Most_popular {
+  width: 100%;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-items: center;
 }
 .Most_popular .Most_popular_footer {
+  display: flex;
   list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+.Most_popular .card_body {
+  color: black;
+  padding: 0;
+  z-index: 2;
+  margin-bottom: -145px;
 }/*# sourceMappingURL=styli.css.map */
