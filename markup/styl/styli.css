@@ -71,12 +71,30 @@ a {
   border: none;
 }
 
-#vehicle1 {
-  display: none;
+label {
+  cursor: pointer;
+  position: relative;
 }
 
-#vehicle:checked ~ .header_menu {
+label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../markup/logo/Shape.svg");
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+#showSearch:checked ~ .hidden-input {
   display: block;
+}
+
+.hidden-input, input[type=checkbox] {
+  display: none;
 }
 
 .block {
@@ -299,6 +317,10 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+.tagt_text a:hover {
+  color: yellow;
+  background: blue;
 }
 
 .newsletter {

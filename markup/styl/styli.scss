@@ -14,6 +14,7 @@ a {
     text-decoration: none;
 }
 
+
 .container {
     max-width: 1170px;
     width: 100%;
@@ -79,13 +80,32 @@ a {
         }       
 }
 
-#vehicle1 {
-    display: none;
+
+label {
+    cursor: pointer; 
+    position: relative; 
 }
 
-.ccc:checked ~ .#vehicle1 {
+label::after {
+    content: ''; 
+    width: 20px; 
+    height: 20px;
+    background-image: url('../markup/logo/Shape.svg'); 
+    background-size: cover;
+    display: inline-block;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 10px; 
+}
+
+#showSearch:checked ~ .hidden-input {
     display: block;
-  }
+}
+
+.hidden-input, input[type="checkbox"] {
+    display: none;
+}
 
 
 .block {
@@ -107,7 +127,6 @@ a {
 .card {
     position: relative;
     border-radius: 5px;
-    // overflow: hidden;
     .btn {
         position: absolute;
         top: 30px;
@@ -118,7 +137,6 @@ a {
         &:hover {
             color: red;
             background: blue;
-        
         }
     }
 }
@@ -251,8 +269,9 @@ a {
         color: white;
         border-radius: 5px;
         text-decoration: none;
+
     }
-    
+        
     .leon li:nth-child(2) h4 {
         margin-bottom: 10px;
     }
@@ -305,20 +324,20 @@ a {
     display: flex;
     flex-direction: column;
 
-
     &_text {
         padding: 0;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-         }
+        }
 
         &_text li {
             background: #EBEBEB;
             text-align: center;
             padding: 5px;
         } 
+
         &_text a{
             background: none;
             border: none;
@@ -327,10 +346,12 @@ a {
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
-    
-        }
-   
-        
+
+            &:hover {
+                color: yellow;
+                background: blue;
+            }
+        }        
 }
 
 .newsletter {
@@ -377,8 +398,7 @@ a {
 }
 
 .pagination {
-    display: flex;
-  
+    display: flex;  
   
   .arrow-button, .page-button, .page-button_selected {
     border: none;
@@ -390,8 +410,7 @@ a {
   .arrow-button {
     background: white;
     border: 1px solid #e5e5e5;
-    margin: 0 5px;
-   
+    margin: 0 5px;   
   }
     
   .page-button {
@@ -401,12 +420,12 @@ a {
     margin: 0 5px;
   }
 
-  
   .page-button_selected {
     background: black;
     color: white;
   }
 }
+
 .arrow-button:hover, .page-button:hover, .page-button_selected:hover {
     background: yellow;
     color: blue;
