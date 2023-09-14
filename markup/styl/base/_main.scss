@@ -1,0 +1,13 @@
+.main {
+    width: 100%;
+    position: relative;
+
+    .main_card {
+        width: 100%;
+        position: relative;  
+        img {
+            max-width: none;
+            width: 100%;
+        }     
+    }     
+}

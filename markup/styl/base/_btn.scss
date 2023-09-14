@@ -1,0 +1,25 @@
+.btn {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1;
+    padding: 3px 10px;
+    background: #4A90E2;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+
+    &:hover {
+        color: white;
+        background: black;
+    }
+}
+
+.btn_text {
+    &a {
+        text-decoration: none;
+    }
+}

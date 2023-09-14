@@ -1,0 +1,25 @@
+label {
+    cursor: pointer; 
+    position: relative; 
+}
+
+label::after {
+    content: ''; 
+    width: 20px; 
+    height: 20px;
+    background-image: url('../markup/logo/Shape.svg'); 
+    background-size: cover;
+    display: inline-block;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 10px; 
+}
+
+#showSearch:checked ~ .hidden-input {
+    display: block;
+}
+
+.hidden-input, input[type="checkbox"] {
+    display: none;
+}

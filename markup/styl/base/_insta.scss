@@ -1,0 +1,38 @@
+.instagram {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.instagram h4 {
+    margin-bottom: 10px;
+}
+
+.foto {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+    
+    >li {
+        display: block;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+}
+
+.inst {
+    display: inline-block;
+    padding: 10px 85px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+
+    &:hover {
+        background: rgb(170, 142, 142);
+    }
+
+}

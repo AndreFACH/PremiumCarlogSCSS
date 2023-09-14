@@ -1,0 +1,34 @@
+.tagt {
+    display: flex;
+    flex-direction: column;
+
+    &_text {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+
+        &_text li {
+            background: #EBEBEB;
+            text-align: center;
+        } 
+
+        &_text a{
+            text-decoration: none;
+            display: block;
+            background: none;
+            border: none;
+            color: black;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            &:hover {
+                color: yellow;
+                background: blue;
+            }
+        }        
+}
