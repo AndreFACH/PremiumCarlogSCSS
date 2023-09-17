@@ -6,30 +6,47 @@
         list-style: none;
         padding: 0;
         margin: 0;
-    }
-    
-    .leon li {
-        margin-bottom: 20px;
-    }
-    
-    .leon li:first-child h4 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    
-    .leon li:first-child p:nth-of-type(1) {
-        font-size: 14px;
-        color: #777;
-    }
 
-    .button {
-        display: inline-block;
-        padding: 10px 87px;
-        background: black;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-    }
+        & li {
+            margin-bottom: 20px;
+        }
+
+        & li:first-child h4 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        & li:first-child p:nth-of-type(1) {
+            font-size: 14px;
+            color: #777;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            &:hover {
+                color: gray;
+            }   
+        }
+        .button_a {
+            display: inline-block;
+            margin: 1px;
+            padding: 10px 87px;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            &:hover {
+                background: gray;
+            }   
+        }
+    }   
         
     .leon li:nth-child(2) h4 {
         margin-bottom: 10px;
@@ -49,3 +66,5 @@
         font-size: 14px;
     }   
 }
+
+

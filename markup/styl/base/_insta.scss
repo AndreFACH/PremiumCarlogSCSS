@@ -24,12 +24,16 @@
 
 .inst {
     display: inline-block;
-    padding: 10px 85px;
+    padding: 10px 63px;
     background: black;
     color: white;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 10px;
+
+    & img {
+        padding: 0 10px;
+    }
 
     &:hover {
         background: rgb(170, 142, 142);

@@ -329,6 +329,10 @@ template {
   justify-content: space-between;
   align-items: center;
 }
+.header .nav a {
+  border: none;
+  background: none;
+}
 .header .nav a:hover {
   color: red;
 }
@@ -488,13 +492,30 @@ label::after {
   font-size: 14px;
   color: #777;
 }
-.post .button {
+.post .leon a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.post .leon a:hover {
+  color: gray;
+}
+.post .leon .button_a {
   display: inline-block;
+  margin: 1px;
   padding: 10px 87px;
   background: black;
   color: white;
   border-radius: 5px;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.post .leon .button_a:hover {
+  background: gray;
 }
 .post .leon li:nth-child(2) h4 {
   margin-bottom: 10px;
@@ -528,15 +549,26 @@ label::after {
   flex-wrap: wrap;
   gap: 10px;
 }
+.foto > li {
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+}
 
-.Inst {
+.inst {
   display: inline-block;
-  padding: 10px 85px;
+  padding: 10px 63px;
   background: black;
   color: white;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 10px;
+}
+.inst img {
+  padding: 0 10px;
+}
+.inst:hover {
+  background: rgb(170, 142, 142);
 }
 
 .tagt {
@@ -553,13 +585,14 @@ label::after {
 .tagt_text li {
   background: #EBEBEB;
   text-align: center;
-  padding: 5px;
 }
 .tagt_text a {
+  text-decoration: none;
+  display: block;
   background: none;
   border: none;
   color: black;
-  padding: 0px 11px;
+  padding: 5px 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -623,7 +656,6 @@ label::after {
 .pagination .page-button {
   background: white;
   border: 1px solid #e5e5e5;
-  padding: 0 10px;
   margin: 0 5px;
 }
 .pagination .page-button_selected {
@@ -632,8 +664,9 @@ label::after {
 }
 
 .arrow-button:hover, .page-button:hover, .page-button_selected:hover {
-  background: yellow;
-  color: blue;
+  background: gray;
+  color: black;
+  cursor: pointer;
 }
 
 .text {
@@ -655,6 +688,13 @@ label::after {
 .text .btn:hover {
   background: black;
   color: white;
+}
+.text .btn_text {
+  color: black;
+  text-decoration: none;
+}
+.text .btn_text:hover {
+  color: gray;
 }
 .text h5 {
   text-decoration: none;
@@ -681,24 +721,37 @@ label::after {
   width: 100%;
 }
 
-.Most_popular {
+.most_popular {
   width: 100%;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
-.Most_popular .Most_popular_footer {
+.most_popular .most_popular_footer {
   display: flex;
   list-style: none;
   justify-content: space-between;
   padding: 0;
 }
-.Most_popular .card_body {
-  color: black;
+.most_popular .card_body-footer {
+  color: #666666;
   padding: 0;
-  z-index: 2;
-  margin-bottom: -145px;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.most_popular .card_body-footer a {
+  text-decoration: none;
+  color: #171717;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+.most_popular .card_body-footer a:hover {
+  color: gray;
 }
 
 body {
@@ -729,6 +782,6 @@ body {
   justify-content: space-between;
 }
 
-.cexx {
-  width: 66.6666666667%;
+.main_block_main {
+  width: calc(100% - 270px - 80px);
 }/*# sourceMappingURL=styli.css.map */

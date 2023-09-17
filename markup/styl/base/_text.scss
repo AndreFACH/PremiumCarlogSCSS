@@ -18,6 +18,14 @@
             color: white;
         }
     }
+    
+    .btn_text {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            color: gray;
+        }
+    }
 
     h5 {
         text-decoration: none;

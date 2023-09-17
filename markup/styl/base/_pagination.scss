@@ -27,6 +27,7 @@
 }
 
 .arrow-button:hover, .page-button:hover, .page-button_selected:hover {
-    background: yellow;
-    color: blue;
+    background: gray;
+    color: black;
+    cursor: pointer;
 }

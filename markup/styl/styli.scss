@@ -11,8 +11,7 @@
 @import './base/pagination';
 @import './base/text';
 @import './base/main';
-@import './base/most_popular';
-@import '../../input/a';
+@import './base/most';
 
 body {
     font-family: 'PT Sans', sans-serif;
@@ -42,6 +41,6 @@ body {
     justify-content: space-between;
 }
 
-.cexx {
-    width: calc(100% -270px - 80px);
+.main_block_main {
+    width: calc(100% - 270px - 80px);
 }
